@@ -1,4 +1,5 @@
 import StudentCard from "./components/studentcard.jsx";
+import Subjects from "./components/subjects.jsx";
 
 function App() {
  return (
@@ -27,19 +28,19 @@ function App() {
       />
       <h1 className="text-center text-2xl font-bold mb-4">Subject Information</h1>
       <Subjects
-        subjectcode="IT101"
-        subjectname="Introduction to Information Technology"
-        subjectschedule="Monday, Wednesday, Friday - 9:00 AM to 10:30 AM"
+        SubjectCode="IT101"
+        SubjectName="Introduction to Information Technology"
+        SubjectSchedule="Monday, Wednesday, Friday - 9:00 AM to 10:30 AM"
       />
       <Subjects
-        subjectcode="IT102"
-        subjectname="Data Structures and Algorithms"
-        subjectschedule="Tuesday, Thursday - 1:00 PM to 2:30 PM"
+        SubjectCode="IT102"
+        SubjectName="Data Structures and Algorithms"
+        SubjectSchedule="Tuesday, Thursday - 1:00 PM to 2:30 PM"
       />
       <Subjects
-        subjectcode="IT103"
-        subjectname="Database Management Systems"
-        subjectschedule="Monday, Wednesday - 3:00 PM to 4:30 PM"
+        SubjectCode="IT103"
+        SubjectName="Database Management Systems"
+        SubjectSchedule="Monday, Wednesday - 3:00 PM to 4:30 PM"
       />
     </div>
   );
