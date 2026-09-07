@@ -1,31 +1,19 @@
-import StudentCard from "./components/studentcard.jsx";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Students from './pages/Students';
+import StudentDetails from './pages/StudentDetails';
+import Navbar from './components/Navbar';
 
 function App() {
- return (
-    <div className="App">
-      <h1 className="text-center text-2xl font-bold mb-4">Student Information</h1>
-      <StudentCard 
-        name="Bryan Suico"
-        age={20}
-        bday="2006-01-15"
-        studentNum="202404436"
-        course="Information Technology"
-      />
-      <StudentCard
-        name="Charles Nodalo"
-        age={23}
-        bday="2003-05-10"
-        studentNum="202400926"
-        course="Information Technology"
-      />
-      <StudentCard
-        name="Harvey Baysac"
-        age={20}
-        bday="2006-08-20"
-        studentNum="202400123"
-        course="Information Technology"
-      />
-    </div>
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/students" element={<Students />} />
+        <Route path="/student/:id" element={<StudentDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
