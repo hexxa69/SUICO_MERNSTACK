@@ -11,6 +11,8 @@ export default function StudentDetails() {
         <div>
           <h2 className="text-2xl font-bold mb-2">Name: {student.name}</h2>
           <p className="text-gray-700">Age: {student.age}</p>
+          <p className="text-gray-700">Sex: {student.sex}</p>
+          <p className="text-gray-700">Course: {student.course}</p>
         </div>
     </div>
   );

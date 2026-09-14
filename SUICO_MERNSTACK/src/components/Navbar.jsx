@@ -6,6 +6,7 @@ export default function Navbar() {
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/students">Students</Link></li>
+        <li><Link to="/AddStudent">Add Student</Link></li>
       </ul>
     </nav>
   );

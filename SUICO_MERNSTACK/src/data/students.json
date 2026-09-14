@@ -2,16 +2,22 @@
     {
         "id" : 1,
         "name" : "Charles",
-        "age" : 23
+        "sex" : "Male",
+        "age" : 23,
+        "course" : "BSIT"
     },
     {
         "id" : 2,
         "name" : "Bryan",
-        "age" : 20
+        "sex" : "Male",
+        "age" : 20,
+        "course" : "BSIT"
     },
     {
         "id" : 3,
         "name" : "Harvey",
-        "age" : 20
+        "sex" : "Male",
+        "age" : 20,
+        "course" : "BSIT"
     }
 ]
