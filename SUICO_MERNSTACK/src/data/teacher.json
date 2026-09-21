@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Mark Harvey",
+        "employeenumber": "EMP001",
+        "specialization": "App Development",
+        "department": "DIT",
+        "sex": "male"
+        
+    },    
+    {
+        "id": 2,
+        "name": "Arren Jade Lord",
+        "employeenumber": "EMP002",
+        "specialization": "UI/UX Design",
+        "department": "DIT",
+        "sex": "male"
+    },    
+    {
+        "id": 3,
+        "name": "John Yevs Bryan",
+        "employeenumber": "EMP003",
+        "specialization": "Programming",
+        "department": "DIT",
+        "sex": "male"
+    },    
+    {
+        "id": 4,
+        "name": "Charles",
+        "employeenumber": "EMP004",
+        "specialization": "Game Development",
+        "department": "DIT",
+        "sex": "male"
+    },    
+    {
+        "id": 5,
+        "name": "Prince Geon Roi",
+        "employeenumber": "EMP005",
+        "specialization": "App Development",
+        "department": "DIT",
+        "sex": "male"
+    }
+
+]

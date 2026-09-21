@@ -1,13 +1,13 @@
 import { useState } from "react";
-import studentData from "../data/students.json";
+import { useNavigate } from "react-router-dom";
 
-export default function AddStudents() {
+export default function AddStudents({ students }) {
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
     const [sex, setSex] = useState("");
     const [course, setCourse] = useState("");
     const [courseDescription, setCourseDescription] = useState("");
-    const [students, setStudents] = useState(studentData);
+    const navigate = useNavigate();
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -16,6 +16,8 @@ export default function AddStudents() {
                 className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-sm"
                 onSubmit={(e) => {
                     e.preventDefault();
+
+                    navigate("/student");
                     const newStudent = {
                         id: students.length + 1,
                         name,
@@ -24,7 +26,7 @@ export default function AddStudents() {
                         course,
                         courseDescription,
                     };
-                    setStudents([...students, newStudent]);
+                    students.push(newStudent);
                     setName("");
                     setAge("");
                     setSex("");
@@ -108,15 +110,6 @@ export default function AddStudents() {
                     </button>
                 </div>
             </form>
-            {students.map((student) => (
-                <div key={student.id} className="bg-gray-300 shadow-md rounded-lg p-4 m-4 max-w-sm mx-auto">
-                    <h2 className="text-xl font-semibold mb-2">{student.name}</h2>
-                    <p className="text-gray-600 mb-1">Age: {student.age}</p>
-                    <p className="text-gray-600 mb-1">Sex: {student.sex}</p>
-                    <p className="text-gray-600 mb-1">Course: {student.course}</p>
-                    <p className="text-gray-600 mb-1">Course Description: {student.courseDescription}</p>
-                </div>
-            ))}
         </div>
     );
 }
