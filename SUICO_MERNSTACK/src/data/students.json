@@ -1,23 +1,39 @@
 [
     {
-        "id" : 1,
-        "name" : "Charles",
-        "sex" : "Male",
-        "age" : 23,
-        "course" : "BSIT"
-    },
+        "id": 1,
+        "name": "Mark Harvey",
+        "age": 20,
+        "course": "Computer Science",
+        "courseDescription": "The study of computers and computational systems."
+        
+    },    
     {
-        "id" : 2,
-        "name" : "Bryan",
-        "sex" : "Male",
-        "age" : 20,
-        "course" : "BSIT"
-    },
+        "id": 2,
+        "name": "Arren Jade Lord",
+        "age": 21,
+        "course": "Mathematics",
+        "courseDescription": "The study of numbers, quantities, and shapes."
+    },    
     {
-        "id" : 3,
-        "name" : "Harvey",
-        "sex" : "Male",
-        "age" : 20,
-        "course" : "BSIT"
+        "id": 3,
+        "name": "John Yevs Bryan",
+        "age": 20,
+        "course": "Physics",
+        "courseDescription": "The study of matter, energy, and their interactions."
+    },    
+    {
+        "id": 4,
+        "name": "Charles",
+        "age": 23,
+        "course": "Chemistry",
+        "courseDescription": "The study of substances and their properties."
+    },    
+    {
+        "id": 5,
+        "name": "Prince Geon Roi",
+        "age": 20,
+        "course": "Biology",
+        "courseDescription": "The study of living organisms."
     }
+
 ]
